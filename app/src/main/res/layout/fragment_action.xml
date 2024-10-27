@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- EditText для информации о задаче -->
+    <EditText
+        android:id="@+id/editTextTaskInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Информация о задаче"
+        android:inputType="textMultiLine"
+        android:minLines="3" />
+
+    <!-- Кнопка для выбора даты -->
+    <Button
+        android:id="@+id/buttonSelectDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выбрать дату" />
+
+    <!-- Кнопка для обновления задачи -->
+    <Button
+        android:id="@+id/buttonUpdateTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Обновить задачу" />
+
+    <!-- Кнопка для удаления задачи -->
+    <Button
+        android:id="@+id/buttonDeleteTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Удалить задачу"
+        android:textColor="@android:color/holo_red_dark" />
+</LinearLayout>
